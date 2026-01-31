@@ -20,6 +20,9 @@ This guide provides detailed explanations of every component, workflows, and enh
 
 ## System Architecture Overview
 
+<img width="1077" height="1075" alt="image" src="https://github.com/user-attachments/assets/0bb8aba1-9a4d-4412-9d95-325b8f7c3158" />
+<img width="1128" height="1006" alt="image" src="https://github.com/user-attachments/assets/77411b98-ec0c-419b-98de-d92d5d542357" />
+
 ### High-Level Architecture Diagram
 
 ```
