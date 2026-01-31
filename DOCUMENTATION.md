@@ -70,8 +70,8 @@ docker-compose up --build
 
 ### 3. Access the API
 
-**Local access:** `http://localhost:8000`
-**VM access:** `http://<VM_IP>:8000`
+**Local access:** `http://localhost:60100`
+**VM access:** `http://<VM_IP>:60100`
 
 To find VM IP:
 ```powershell
@@ -81,7 +81,7 @@ ipconfig  # Look for IPv4 Address
 ### 4. Test Health
 
 ```bash
-curl http://localhost:8000/health
+curl http://localhost:60100/health
 ```
 
 Expected response:
@@ -290,19 +290,18 @@ personal-assistant/
 
 ## API Reference
 
-Base URL: `http://<VM_IP>:8000` or `http://localhost:8000`
+Base URL: `http://<VM_IP>:60100` or `http://localhost:60100`
 
 ### Authentication Endpoints
 
 #### POST `/v1/auth/register`
 Register a new user.
 
-**Request:**
-```json
-{
-  "email": "user@example.com",
-  "password": "password123"
-}
+**Example:**
+```bash
+curl -X POST http://localhost:60100/v1/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"user@example.com","password":"password123"}'
 ```
 
 **Response (201):**

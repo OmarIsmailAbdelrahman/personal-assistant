@@ -79,7 +79,7 @@ ipconfig
 
 ## 📡 API Endpoints
 
-Base URL: `http://<VM_IP>:8000` (or `http://localhost:8000` if running locally)
+Base URL: `http://<VM_IP>:60100` (or `http://localhost:60100` if running locally)
 
 ### Authentication
 
@@ -300,9 +300,9 @@ personal-assistant/
 ### Cannot connect from Android device
 
 1. **Check VM network**: Ensure VM is in bridged mode (not NAT)
-2. **Firewall**: Allow port 8000 on VM firewall
+2. **Firewall**: Allow port 60100 on VM firewall
    ```powershell
-   New-NetFirewallRule -DisplayName "Chat API" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow
+   New-NetFirewallRule -DisplayName "Chat API" -Direction Inbound -LocalPort 60100 -Protocol TCP -Action Allow
    ```
 3. **Test from VM itself**: `curl http://localhost:8000/health`
 4. **Test from device**: `curl http://<VM_IP>:8000/health`

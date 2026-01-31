@@ -52,11 +52,12 @@ Wait for these messages:
 
 ### Step 3: Test
 ```powershell
+# That's it! Your backend will be running at `http://localhost:60100`/health
 # Test health
-curl http://localhost:8000/health
+curl http://localhost:60100/health
 
 # Or from PowerShell
-Invoke-RestMethod http://localhost:8000/health
+Invoke-RestMethod http://localhost:60100/health
 ```
 
 ## 📱 For VM Access (Android Device)
@@ -68,13 +69,12 @@ ipconfig
 ```
 
 ### Allow Firewall
-```powershell
-New-NetFirewallRule -DisplayName "Chat API" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow
-```
+2. Allow firewall: `New-NetFirewallRule -DisplayName "Chat API" -Direction Inbound -LocalPort 60100 -Protocol TCP -Action Allow`
+3. Use `http://<VM_IP>:60100` in your Android app/device
 
 ### Test from Device
 ```bash
-curl http://<VM_IP>:8000/health
+curl http://<VM_IP>:60100/health
 ```
 
 ## 📚 Documentation

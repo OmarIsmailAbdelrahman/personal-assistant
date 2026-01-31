@@ -33,7 +33,7 @@ services:
     build: .
     container_name: chat-api
     ports:
-      - "8000:8000"
+      - "60100:8000"
     environment:
       - DATABASE_URL=postgresql://chatuser:chatpass@postgres:5432/chatdb
       - REDIS_URL=redis://redis:6379/0
