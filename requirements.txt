@@ -15,6 +15,7 @@ rq==1.16.1
 # Auth & Security
 pyjwt==2.8.0
 passlib[bcrypt]==1.7.4
+bcrypt==3.2.2  # Pin to 3.2.2 for passlib compatibility
 python-jose[cryptography]==3.3.0
 
 # Configuration & Validation
