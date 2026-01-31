@@ -178,7 +178,7 @@ def _run_gemini_agent(conversation_context: list, user_text: str) -> str:
     
     try:
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Start a chat with history
         chat = model.start_chat(history=conversation_context[:-1] if len(conversation_context) > 1 else [])

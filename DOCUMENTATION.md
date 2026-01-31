@@ -74,8 +74,9 @@ docker-compose up --build
 **VM access:** `http://<VM_IP>:60100`
 
 To find VM IP:
-```powershell
-ipconfig  # Look for IPv4 Address
+```bash
+ip addr show
+# Or: hostname -I
 ```
 
 ### 4. Test Health
