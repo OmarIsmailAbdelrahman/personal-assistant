@@ -1,6 +1,8 @@
-# LangGraph Chat Backend
+<img width="1077" height="1075" alt="image" src="https://github.com/user-attachments/assets/1c18712e-147e-4703-b031-907f15c8fa5f" /># LangGraph Chat Backend
 
 Backend API for an Android-first chat application with asynchronous agent execution.
+<img width="1077" height="1075" alt="image" src="https://github.com/user-attachments/assets/0bb8aba1-9a4d-4412-9d95-325b8f7c3158" />
+<img width="1128" height="1006" alt="image" src="https://github.com/user-attachments/assets/77411b98-ec0c-419b-98de-d92d5d542357" />
 
 ## Quick Start
 
